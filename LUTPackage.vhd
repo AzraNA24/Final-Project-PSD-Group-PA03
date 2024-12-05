@@ -3,9 +3,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.ALL;
 
 package LUTPackage is
-    -- Tipe data untuk input 8 bit
-    TYPE integer IS RANGE 0 to 255;
-
     -- Deklarasi fungsi konversi
     function Convert_to_alphanum(inte : in integer) return character;
     function Convert_to_integer(alphanum : in character) return integer;
@@ -71,18 +68,18 @@ package body LUTPackage is
     FUNCTION Convert_to_integer(alphanum : in character) return integer IS
         variable temp_int : integer;
     BEGIN
-        CASE anpha IS
+        CASE alphanum IS
             -- Pemetaan angka [0-9]
             WHEN '0' => temp_int := 0;
             WHEN '1' => temp_int := 1;
             WHEN '2' => temp_int := 2;
-            WHEN '3' => temp_char := 3;
-            WHEN '4' => temp_char := 4;
-            WHEN '5' => temp_char := 5;
-            WHEN '6' => temp_char := 6;
-            WHEN '7' => temp_char := 7;
-            WHEN '8' => temp_char := 8;
-            WHEN '9' => temp_char := 9;
+            WHEN '3' => temp_int := 3;
+            WHEN '4' => temp_int := 4;
+            WHEN '5' => temp_int := 5;
+            WHEN '6' => temp_int := 6;
+            WHEN '7' => temp_int := 7;
+            WHEN '8' => temp_int := 8;
+            WHEN '9' => temp_int := 9;
 
             -- Pemetaan huruf [A-Z]
             WHEN 'A' => temp_int := 10;
