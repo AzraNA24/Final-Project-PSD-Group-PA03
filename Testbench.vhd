@@ -12,8 +12,8 @@ architecture behavior of tb_DataEncoding is
     -- Component Declaration for the Unit Under Test (UUT)
     component DataEncoding
         Port ( input_char : in std_logic_vector(7 downto 0);
-               encoded_data : out std_logic_vector(7 downto 0)
-             );
+            encoded_data : out std_logic_vector(7 downto 0)
+            );
     end component;
 begin
     -- Instantiate the Unit Under Test (UUT)
