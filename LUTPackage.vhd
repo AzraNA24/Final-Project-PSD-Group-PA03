@@ -1,107 +1,96 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.numeric_std.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 package LUTPackage is
-    -- Deklarasi fungsi konversi
-    function Convert_to_alphanum(inte : in integer) return character;
-    function Convert_to_integer(alphanum : in character) return integer;
-end package LUTPackage;
+    -- Tabel pengubahan karakter alfanumerik
+    type char_table is array (0 to 44) of std_logic_vector(5 downto 0);
+    constant char_map : char_table := (
+        "000000", -- 0
+        "000001", -- 1
+        "000010", -- 2
+        "000011", -- 3
+        "000100", -- 4
+        "000101", -- 5
+        "000110", -- 6
+        "000111", -- 7
+        "001000", -- 8
+        "001001", -- 9
+        "001010", -- A
+        "001011", -- B
+        "001100", -- C
+        "001101", -- D
+        "001110", -- E
+        "001111", -- F
+        "010000", -- G
+        "010001", -- H
+        "010010", -- I
+        "010011", -- J
+        "010100", -- K
+        "010101", -- L
+        "010110", -- M
+        "010111", -- N
+        "011000", -- O
+        "011001", -- P
+        "011010", -- Q
+        "011011", -- R
+        "011100", -- S
+        "011101", -- T
+        "011110", -- U
+        "011111", -- V
+        "100000", -- W
+        "100001", -- X
+        "100010", -- Y
+        "100011", -- Z
+        "100100", -- SPACE
+    );
+
+    -- Fungsi untuk memetakan karakter ASCII ke indeks alfanumerik
+    function char_to_index(c : std_logic_vector(7 downto 0)) return integer;
+end LUTPackage;
 
 package body LUTPackage is
-    -- Fungsi konversi dari integer ke alphanumeric (character)
-    FUNCTION Convert_to_alphanum(inte : in integer) return character IS
-        variable temp_char : character;
-    BEGIN
-        CASE inte IS
-            -- Pemetaan angka [0-9]
-            WHEN 0 => temp_char := '0';
-            WHEN 1 => temp_char := '1';
-            WHEN 2 => temp_char := '2';
-            WHEN 3 => temp_char := '3';
-            WHEN 4 => temp_char := '4';
-            WHEN 5 => temp_char := '5';
-            WHEN 6 => temp_char := '6';
-            WHEN 7 => temp_char := '7';
-            WHEN 8 => temp_char := '8';
-            WHEN 9 => temp_char := '9';
-
-            -- Pemetaan huruf [A-Z]
-            WHEN 10 => temp_char := 'A';
-            WHEN 11 => temp_char := 'B';
-            WHEN 12 => temp_char := 'C';
-            WHEN 13 => temp_char := 'D';
-            WHEN 14 => temp_char := 'E';
-            WHEN 15 => temp_char := 'F';
-            WHEN 16 => temp_char := 'G';
-            WHEN 17 => temp_char := 'H';
-            WHEN 18 => temp_char := 'I';
-            WHEN 19 => temp_char := 'J';
-            WHEN 20 => temp_char := 'K';
-            WHEN 21 => temp_char := 'L';
-            WHEN 22 => temp_char := 'M';
-            WHEN 23 => temp_char := 'N';
-            WHEN 24 => temp_char := 'O';
-            WHEN 25 => temp_char := 'P';
-            WHEN 26 => temp_char := 'Q';
-            WHEN 27 => temp_char := 'R';
-            WHEN 28 => temp_char := 'S';
-            WHEN 29 => temp_char := 'T';
-            WHEN 30 => temp_char := 'U';
-            WHEN 31 => temp_char := 'V';
-            WHEN 32 => temp_char := 'W';
-            WHEN 33 => temp_char := 'X';
-            WHEN 34 => temp_char := 'Y';
-            WHEN 35 => temp_char := 'Z';
-
-            -- Pemetaan simbol
-            WHEN 36 => temp_char := '-';
-            WHEN 37 => temp_char := '_';
-
-            -- Nilai default untuk input yang tidak valid
-            WHEN OTHERS => temp_char := ' ';
-        END CASE;
-        return temp_char;
-    END FUNCTION Convert_to_alphanum;
-
-    -- Fungsi konversi dari alphanumeric ke integer
-    FUNCTION Convert_to_integer(alphanum : in character) return integer IS
-        variable temp_int : integer;
-    BEGIN
-        CASE alphanum IS
-            -- Pemetaan angka [0-9]
-            WHEN '0' => temp_int := 0;
-            WHEN '1' => temp_int := 1;
-            WHEN '2' => temp_int := 2;
-            WHEN '3' => temp_int := 3;
-            WHEN '4' => temp_int := 4;
-            WHEN '5' => temp_int := 5;
-            WHEN '6' => temp_int := 6;
-            WHEN '7' => temp_int := 7;
-            WHEN '8' => temp_int := 8;
-            WHEN '9' => temp_int := 9;
-
-            -- Pemetaan huruf [A-Z]
-            WHEN 'A' => temp_int := 10;
-            WHEN 'B' => temp_int := 11;
-            WHEN 'C' => temp_int := 12;
-            WHEN 'D' => temp_int := 13;
-            WHEN 'E' => temp_int := 14;
-            WHEN 'F' => temp_int := 15;
-            WHEN 'G' => temp_int := 16;
-            WHEN 'H' => temp_int := 17;
-            WHEN 'I' => temp_int := 18;
-            WHEN 'J' => temp_int := 19;
-            WHEN 'K' => temp_int := 20;
-            WHEN 'Z' => temp_int := 35;
-
-            -- Pemetaan simbol
-            WHEN '-' => temp_int := 36;
-            WHEN '_' => temp_int := 37;
-
-            -- Nilai default untuk karakter yang tidak valid
-            WHEN OTHERS => temp_int := 255;
-        END CASE;
-        return temp_int;
-    END FUNCTION Convert_to_integer;
-end package body LUTPackage;
+    function char_to_index(c : std_logic_vector(7 downto 0)) return integer is
+    begin
+        case c is
+            when "00110000" => return 0;  -- '0'
+            when "00110001" => return 1;  -- '1'
+            when "00110010" => return 2;  -- '2'
+            when "00110011" => return 3;  -- '3'
+            when "00110100" => return 4;  -- '4'
+            when "00110101" => return 5;  -- '5'
+            when "00110110" => return 6;  -- '6'
+            when "00110111" => return 7;  -- '7'
+            when "00111000" => return 8;  -- '8'
+            when "00111001" => return 9;  -- '9'
+            when "01000001" => return 10; -- 'A'
+            when "01000010" => return 11; -- 'B'
+            when "01000011" => return 12; -- 'C'
+            when "01000100" => return 13; -- 'D'
+            when "01000101" => return 14; -- 'E'
+            when "01000110" => return 15; -- 'F'
+            when "01000111" => return 16; -- 'G'
+            when "01001000" => return 17; -- 'H'
+            when "01001001" => return 18; -- 'I'
+            when "01001010" => return 19; -- 'J'
+            when "01001011" => return 20; -- 'K'
+            when "01001100" => return 21; -- 'L'
+            when "01001101" => return 22; -- 'M'
+            when "01001110" => return 23; -- 'N'
+            when "01001111" => return 24; -- 'O'
+            when "01010000" => return 25; -- 'P'
+            when "01010001" => return 26; -- 'Q'
+            when "01010010" => return 27; -- 'R'
+            when "01010011" => return 28; -- 'S'
+            when "01010100" => return 29; -- 'T'
+            when "01010101" => return 30; -- 'U'
+            when "01010110" => return 31; -- 'V'
+            when "01010111" => return 32; -- 'W'
+            when "01011000" => return 33; -- 'X'
+            when "01011001" => return 34; -- 'Y'
+            when "01011010" => return 35; -- 'Z'
+            when "00100000" => return 36; -- ' '
+            when others => return 0;      -- Default (space)
+        end case;
+    end function;
+end LUTPackage;

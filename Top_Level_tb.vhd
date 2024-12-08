@@ -1,61 +1,78 @@
-Library ieee;
-use ieee.std_logic_1164.all;
-use IEEE.numeric_std.ALL;
-use STD.TEXTIO.ALL;
-Library work;
-use work.LUTPACKAGE.all;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.TEXTIO.ALL;
+use work.LUTPackage.ALL;
 
 entity Top_Level_tb is
 end Top_Level_tb;
 
-architecture testbench of Top_Level_tb is
+architecture Behavioral of Top_Level_tb is
+    component Top_Level_tb is
+        Port (
+            clk        : in std_logic;
+            reset      : in std_logic;
+            start      : in std_logic;
+            input_text : in std_logic_vector(63 downto 0);
+            done       : out std_logic;
+            qr_matrix  : out std_logic_vector(20*20-1 downto 0)
+        );
+    end component;
 
-COMPONENT Top_Level 
-Port (
-	clk 			: in std_logic;
-	input_char : in string(1 to 8);
-	output_bin 	: out std_logic_vector (207 downto 0));
-END component;
+    -- Signals
+    signal clk        : std_logic := '0';
+    signal reset      : std_logic := '0';
+    signal start      : std_logic := '0';
+    signal input_text : std_logic_vector(63 downto 0);
+    signal done       : std_logic;
+    signal qr_matrix  : std_logic_vector(20*20-1 downto 0);
 
-	signal clk 			:  std_logic := '1';
-	signal input_char : in string(1 to 8); := "HELLO123";
-	signal output_bin 	: std_logic_vector (207 downto 0);
-	signal output_bin_TEMP : bit_vector (207 downto 0);
-	signal clock_wr 	: Std_logic := '0';
-	FILE file_output : text open WRITE_MODE is "test_log.txt";
-	constant clk_period : time := 20 ns;
-	constant clock_wr_period : time := 4860 ns;
-	
-BEGIN
-clk_process : process
-	begin
-	    clk <= '1';
-	    wait for clk_period/2;
-	    clk <= '0';
-	    wait for clk_period/2;
-	end process clk_process;
+    -- File for output
+    file output_file : text open write_mode is "qr_output.txt";
 
-UUT:  entity work.top_entity 
-		port map (clk => clk, input_char => input_char, output_bin => output_bin);
-		
-create_clock: process
-	begin
-		wait for clock_wr_period;
-	    clock_wr <= '1';
-	    wait for clock_wr_period/2;
-	    clock_wr <= '0';
-	    wait for clock_wr_period/2;
-	end process create_clock;
+begin
+    -- Clock generation
+    clk_process : process
+    begin
+        clk <= '0';
+        wait for 5 ns;
+        clk <= '1';
+        wait for 5 ns;
+    end process;
 
-	outp_bin_TEMP <= TO_BITVECTOR(output_bin);
-		
-check: process (clock_wr)
-	variable str: line;
-	begin
-	    if  (rising_edge (clock_wr)) then
-	
-		print_to_file(outp_bin_TEMP, file_output);
-	
-	    end if;
-	end process check;
-END;
+    -- DUT instantiation
+    dut : qr_fsm port map(
+        clk => clk,
+        reset => reset,
+        start => start,
+        input_text => input_text,
+        done => done,
+        qr_matrix => qr_matrix
+    );
+
+    -- Test stimulus
+    process
+        variable line_data : line;
+    begin
+        -- Reset and start signal
+        reset <= '1';
+        wait for 10 ns;
+        reset <= '0';
+        start <= '1';
+        input_text <= "0100100001000001010011000100110000110001011010100011001000110011"; -- ASCII of HALLO123
+        wait for 10 ns;
+        start <= '0';
+
+        -- Wait for completion
+        wait until done = '1';
+
+        -- Write output matrix to file
+        for i in 0 to 19 loop
+            write(line_data, qr_matrix(i*20 to i*20+19));
+            writeline(output_file, line_data);
+        end loop;
+
+        -- End simulation
+        wait;
+    end process;
+
+end Behavioral;
