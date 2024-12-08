@@ -1,4 +1,71 @@
-{C:/Users/azras/Documents/PSD Proyek Akhir/Input.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/Input.vhd}
+{C:/Users/azras/Documents/PSD Proyek Akhir/matrix_generator.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/matrix_generator.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity matrix_generator
+-- Compiling architecture Behavioral of matrix_generator
+
+} {} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/data_encoder_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/data_encoder_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package LUTPackage
+-- Compiling entity tb_data_encoder
+-- Compiling architecture Behavioral of tb_data_encoder
+
+} {} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/LUTPackage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/LUTPackage.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package LUTPackage
+-- Compiling package body LUTPackage
+-- Loading package LUTPackage
+
+} {} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/Input_tb.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/Input_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+** Error: C:/Users/azras/Documents/PSD Proyek Akhir/Input_tb.vhd(6): near ".": (vcom-1576) expecting STRING or IDENTIFIER or <<.
+
+} {7.0 8.0} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/masking_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/masking_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Compiling entity masking_tb
+-- Compiling architecture Behavioral of masking_tb
+
+} {} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/Top_Level_tb.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/Top_Level_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package LUTPackage
+-- Compiling entity Top_Level_tb
+-- Compiling architecture Behavioral of Top_Level_tb
+** Error: C:/Users/azras/Documents/PSD Proyek Akhir/Top_Level_tb.vhd(70): (vcom-1600) No feasible entries for subprogram "write".
+   Visible subprograms are:
+      (implicit) TEXTIO.write[std.TEXTIO.TEXT, std.STANDARD.STRING] at $MODEL_TECH/../vhdl_src/std/textio.vhd(15)
+      (explicit) TEXTIO.WRITE[std.TEXTIO.LINE, BIT, std.TEXTIO.SIDE, NATURAL] at $MODEL_TECH/../vhdl_src/std/textio.vhd(123)
+      (explicit) TEXTIO.WRITE[std.TEXTIO.LINE, BIT_VECTOR, std.TEXTIO.SIDE, NATURAL] at $MODEL_TECH/../vhdl_src/std/textio.vhd(126)
+      (explicit) TEXTIO.WRITE[std.TEXTIO.LINE, BOOLEAN, std.TEXTIO.SIDE, NATURAL] at $MODEL_TECH/../vhdl_src/std/textio.vhd(129)
+      (explicit) TEXTIO.WRITE[std.TEXTIO.LINE, std.STANDARD.CHARACTER, std.TEXTIO.SIDE, NATURAL] at $MODEL_TECH/../vhdl_src/std/textio.vhd(132)
+      (explicit) TEXTIO.WRITE[std.TEXTIO.LINE, INTEGER, std.TEXTIO.SIDE, NATURAL] at $MODEL_TECH/../vhdl_src/std/textio.vhd(135)
+      (explicit) TEXTIO.WRITE[std.TEXTIO.LINE, std.STANDARD.REAL, std.TEXTIO.SIDE, NATURAL, NATURAL] at $MODEL_TECH/../vhdl_src/std/textio.vhd(138)
+      (explicit) TEXTIO.WRITE[std.TEXTIO.LINE, std.STANDARD.STRING, std.TEXTIO.SIDE, NATURAL] at $MODEL_TECH/../vhdl_src/std/textio.vhd(145)
+      (explicit) TEXTIO.WRITE[std.TEXTIO.LINE, std.STANDARD.TIME, std.TEXTIO.SIDE, NATURAL, std.STANDARD.TIME] at $MODEL_TECH/../vhdl_src/std/textio.vhd(148)
+** Note: C:/Users/azras/Documents/PSD Proyek Akhir/Top_Level_tb.vhd(78): VHDL Compiler exiting
+
+} {10.0 11.0} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/Input.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/Input.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -11,25 +78,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 ** Error: C:/Users/azras/Documents/PSD Proyek Akhir/Input.vhd(11): (vcom-1136) Unknown identifier "int_array".
 ** Note: C:/Users/azras/Documents/PSD Proyek Akhir/Input.vhd(15): VHDL Compiler exiting
 
-} {11.0 12.0} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/Input_tb.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/Input_tb.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
-** Error: C:/Users/azras/Documents/PSD Proyek Akhir/Input_tb.vhd(6): near ".": (vcom-1576) expecting STRING or IDENTIFIER or <<.
-
-} {7.0 8.0} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/LUTPackage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/LUTPackage.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling package LUTPackage
--- Compiling package body LUTPackage
--- Loading package LUTPackage
-
-} {} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/DataEncoding.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/DataEncoding.vhd}
+} {11.0 12.0} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/DataEncoding.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/DataEncoding.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -39,5 +88,53 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package LUTPackage
 -- Compiling entity DataEncoding
 -- Compiling architecture Behavioral of DataEncoding
+
+} {} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/data_encoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/data_encoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package LUTPackage
+-- Compiling entity data_encoder
+-- Compiling architecture Behavioral of data_encoder
+
+} {} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity error_correction
+-- Compiling architecture Behavioral of error_correction
+** Error: C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd(22): (vcom-1581) No feasible entries for infix operator 'xor'.
+** Error: C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd(22): Bad right hand side (infix expression) in variable assignment.
+** Error: C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd(27): (vcom-1581) No feasible entries for infix operator 'xor'.
+** Error: C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd(27): Bad right hand side (infix expression) in variable assignment.
+** Error: C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd(51): Signal "data_bytes" cannot be target of variable assignment statement.
+** Error: C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd(56): (vcom-1581) No feasible entries for infix operator 'xor'.
+** Error: C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd(56): Bad right hand side (infix expression) in variable assignment.
+** Error: C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd(57): (vcom-1581) No feasible entries for infix operator 'xor'.
+** Error: C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd(57): Bad right hand side (infix expression) in variable assignment.
+** Error: C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd(58): (vcom-1152) Index value 2 is out of index range 0 to 1 of work.error_correction(Behavioral).parity_array.
+** Note: C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd(65): VHDL Compiler exiting
+
+} {9.0 19.0} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/masking.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/masking.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity masking
+-- Compiling architecture Behavioral of masking
+
+} {} {}} {C:/Users/azras/Documents/PSD Proyek Akhir/Top_Level.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/azras/Documents/PSD Proyek Akhir/Top_Level.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package LUTPackage
+-- Compiling entity Top_Level
+-- Compiling architecture Behavioral of Top_Level
 
 } {} {}}

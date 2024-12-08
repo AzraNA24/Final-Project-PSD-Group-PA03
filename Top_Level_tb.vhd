@@ -1,20 +1,20 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.TEXTIO.ALL;
+use STD.TEXTIO.ALL;
 use work.LUTPackage.ALL;
 
 entity Top_Level_tb is
 end Top_Level_tb;
 
 architecture Behavioral of Top_Level_tb is
-    component Top_Level_tb is
+    component Top_Level is  -- Correct component name
         Port (
             clk        : in std_logic;
             reset      : in std_logic;
             start      : in std_logic;
             input_text : in std_logic_vector(63 downto 0);
             done       : out std_logic;
-            qr_matrix  : out std_logic_vector(20*20-1 downto 0)
+            qr_matrix  : out std_logic_vector(21*21-1 downto 0)
         );
     end component;
 
@@ -24,7 +24,7 @@ architecture Behavioral of Top_Level_tb is
     signal start      : std_logic := '0';
     signal input_text : std_logic_vector(63 downto 0);
     signal done       : std_logic;
-    signal qr_matrix  : std_logic_vector(20*20-1 downto 0);
+    signal qr_matrix  : std_logic_vector(21*21-1 downto 0);
 
     -- File for output
     file output_file : text open write_mode is "qr_output.txt";
@@ -40,13 +40,13 @@ begin
     end process;
 
     -- DUT instantiation
-    dut : qr_fsm port map(
-        clk => clk,
-        reset => reset,
-        start => start,
+    dut : Top_Level port map(
+        clk        => clk,
+        reset      => reset,
+        start      => start,
         input_text => input_text,
-        done => done,
-        qr_matrix => qr_matrix
+        done       => done,
+        qr_matrix  => qr_matrix
     );
 
     -- Test stimulus
@@ -66,8 +66,8 @@ begin
         wait until done = '1';
 
         -- Write output matrix to file
-        for i in 0 to 19 loop
-            write(line_data, qr_matrix(i*20 to i*20+19));
+        for i in 0 to 20 loop
+            write(line_data, qr_matrix(i*21 to i*21+20));
             writeline(output_file, line_data);
         end loop;
 

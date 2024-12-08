@@ -4,7 +4,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 package LUTPackage is
     -- Tabel pengubahan karakter alfanumerik
-    type char_table is array (0 to 44) of std_logic_vector(5 downto 0);
+    type char_table is array (0 to 36) of std_logic_vector(5 downto 0);
     constant char_map : char_table := (
         "000000", -- 0
         "000001", -- 1
@@ -42,7 +42,7 @@ package LUTPackage is
         "100001", -- X
         "100010", -- Y
         "100011", -- Z
-        "100100", -- SPACE
+        "100100" -- SPACE
     );
 
     -- Fungsi untuk memetakan karakter ASCII ke indeks alfanumerik

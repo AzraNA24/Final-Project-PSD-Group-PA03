@@ -39,8 +39,8 @@ begin
         encoded_tmp := (others => '0');
 
         -- Tambahkan mode dan length
-        encoded_tmp(159 downto 156) <= mode;               -- 4 bit mode
-        encoded_tmp(155 downto 148) <= length;             -- 8 bit length
+        encoded_tmp(159 downto 156) := mode;               -- 4 bit mode
+        encoded_tmp(155 downto 148) := length;             -- 8 bit length
 
         -- Encoding setiap pasangan karakter
         for i in 0 to num_pairs - 1 loop
@@ -60,7 +60,7 @@ begin
 
             -- Tempatkan pasangan dalam encoded_tmp
             -- Mulai dari bit 147 downto 0, setiap 11 bit
-            encoded_tmp(147 - (i*11) downto 137 - (i*11)) <= pair_bin;
+            encoded_tmp(147 - (i*11) downto 137 - (i*11)) := pair_bin;
         end loop;
 
         -- Assign hasil encoding ke output

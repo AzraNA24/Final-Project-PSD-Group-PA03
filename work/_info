@@ -9,170 +9,197 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA/20.1
-Edataencoding
-Z0 w1733375634
-Z1 DPx4 work 10 lutpackage 0 22 EU1EgK;Q?<;2RXX6;RfVj1
-Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 54
-Z6 dC:/Users/azras/Documents/PSD Proyek Akhir
-Z7 8C:/Users/azras/Documents/PSD Proyek Akhir/DataEncoding.vhd
-Z8 FC:/Users/azras/Documents/PSD Proyek Akhir/DataEncoding.vhd
+Edata_encoder
+Z0 w1733674964
+Z1 DPx4 work 10 lutpackage 0 22 UnXRoSLfQVk<T0E0]mzAY3
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 60
+Z5 dC:/Users/azras/Documents/PSD Proyek Akhir
+Z6 8C:/Users/azras/Documents/PSD Proyek Akhir/data_encoder.vhd
+Z7 FC:/Users/azras/Documents/PSD Proyek Akhir/data_encoder.vhd
 l0
-L8 1
-V^L_3O8?Ko^SA0;fg=G6L_3
-!s100 nQ@Gl_05DEkPD49aeY?=E3
-Z9 OV;C;2020.1;71
+L6 1
+V5iXzmdMW_8HlM]Z3KIg^12
+!s100 :XnOh`@NI6_i_BdzENKEc0
+Z8 OV;C;2020.1;71
 32
-Z10 !s110 1733375668
+Z9 !s110 1733674967
 !i10b 1
-Z11 !s108 1733375668.000000
-Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/DataEncoding.vhd|
-Z13 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/DataEncoding.vhd|
+Z10 !s108 1733674967.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/data_encoder.vhd|
+Z12 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/data_encoder.vhd|
 !i113 1
-Z14 o-work work -2002 -explicit
-Z15 tExplicit 1 CvgOpt 0
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
 Abehavioral
 R1
 R2
 R3
 R4
+DEx4 work 12 data_encoder 0 22 5iXzmdMW_8HlM]Z3KIg^12
+!i122 60
+l29
+L13 57
+VEm<EkVDVZLPk1zWai:QZ00
+!s100 K>ZaJm<Ol5AK]CZ05Q5H92
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Edataencoding
+Z15 w1733375634
+Z16 DPx4 work 10 lutpackage 0 22 EU1EgK;Q?<;2RXX6;RfVj1
+Z17 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z18 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R3
+R4
+!i122 54
 R5
+Z19 8C:/Users/azras/Documents/PSD Proyek Akhir/DataEncoding.vhd
+Z20 FC:/Users/azras/Documents/PSD Proyek Akhir/DataEncoding.vhd
+l0
+L8 1
+V^L_3O8?Ko^SA0;fg=G6L_3
+!s100 nQ@Gl_05DEkPD49aeY?=E3
+R8
+32
+Z21 !s110 1733375668
+!i10b 1
+Z22 !s108 1733375668.000000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/DataEncoding.vhd|
+Z24 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/DataEncoding.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R16
+R17
+R18
+R3
+R4
 DEx4 work 12 dataencoding 0 22 ^L_3O8?Ko^SA0;fg=G6L_3
 !i122 54
 l15
 L14 7
 VY]5Xlg6ka9@^0Zh<cSn[;2
 !s100 O:XRgZ:WD8F9YJP:>8GP72
-R9
+R8
 32
-R10
+R21
 !i10b 1
-R11
-R12
-R13
+R22
+R23
+R24
 !i113 1
+R13
 R14
-R15
-Elut
-Z16 w1733372109
+Eerror_correction
+w1733676413
+R2
+R3
 R4
+!i122 73
 R5
+8C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd
+FC:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd
+l0
+L5 1
+V>=M`_g^_7D@SF6CjAXU2l0
+!s100 kR:f<idlAkUN2QT4M?:Z]1
+R8
+32
+!s110 1733676419
+!i10b 1
+!s108 1733676419.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd|
+!s107 C:/Users/azras/Documents/PSD Proyek Akhir/error_correction.vhd|
+!i113 1
+R13
+R14
+Elut
+Z25 w1733372109
+R3
+R4
 !i122 18
-R6
-Z17 8C:/Users/azras/Documents/PSD Proyek Akhir/LUT.vhd
-Z18 FC:/Users/azras/Documents/PSD Proyek Akhir/LUT.vhd
+R5
+Z26 8C:/Users/azras/Documents/PSD Proyek Akhir/LUT.vhd
+Z27 FC:/Users/azras/Documents/PSD Proyek Akhir/LUT.vhd
 l0
 L4 1
 VYPWcCP6=P@^z6;HCe5K;?3
 !s100 BIMFRzlW9C=Jo]1X[UmGZ1
-R9
+R8
 32
-Z19 !s110 1733372181
+Z28 !s110 1733372181
 !i10b 1
-Z20 !s108 1733372181.000000
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/LUT.vhd|
-Z22 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/LUT.vhd|
+Z29 !s108 1733372181.000000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/LUT.vhd|
+Z31 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/LUT.vhd|
 !i113 1
+R13
 R14
-R15
 Abehavioral
+R3
 R4
-R5
 DEx4 work 3 lut 0 22 YPWcCP6=P@^z6;HCe5K;?3
 !i122 18
 l51
 L11 50
 VD8c;Zj`WOIHo_IzaYbBCT0
 !s100 Fz1MBONOdnK[MLlB:0A4U3
-R9
+R8
 32
-R19
-!i10b 1
-R20
-R21
-R22
-!i113 1
-R14
-R15
-Plutpackage
-Z23 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-R4
-R5
-!i122 56
-Z24 w1733427757
-R6
-Z25 8C:/Users/azras/Documents/PSD Proyek Akhir/LUTPackage.vhd
-Z26 FC:/Users/azras/Documents/PSD Proyek Akhir/LUTPackage.vhd
-l0
-L5 1
-Vz=fhf>R<EbSQ<c4nz?2J01
-!s100 F?ODUgbn7V@=L4@]7XzL[3
-R9
-32
-b1
-Z27 !s110 1733428840
-!i10b 1
-Z28 !s108 1733428840.000000
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/LUTPackage.vhd|
-Z30 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/LUTPackage.vhd|
-!i113 1
-R14
-R15
-Bbody
-DPx4 work 10 lutpackage 0 22 z=fhf>R<EbSQ<c4nz?2J01
-R23
-R4
-R5
-!i122 56
-l0
-Z31 L11 1
-VCzO20f6:bPaZ?Z3jA[;NE3
-!s100 h>zaU=1UG1ae]BzYJDBId0
-R9
-32
-R27
-!i10b 1
 R28
+!i10b 1
 R29
 R30
+R31
 !i113 1
+R13
 R14
-R15
-Etb_dataencoding
-Z32 w1733375575
+Plutpackage
+R2
+R3
 R4
+!i122 57
+Z32 w1733674807
 R5
-!i122 55
-R6
-Z33 8C:\Users\azras\Documents\PSD Proyek Akhir\Testbench.vhd
-Z34 FC:\Users\azras\Documents\PSD Proyek Akhir\Testbench.vhd
+Z33 8C:/Users/azras/Documents/PSD Proyek Akhir/LUTPackage.vhd
+Z34 FC:/Users/azras/Documents/PSD Proyek Akhir/LUTPackage.vhd
 l0
 L5 1
-VcnIk9P^iial]62jR^z7Ph2
-!s100 Oa`N=1D<;f3U6j@odkKhY1
-R9
+VUnXRoSLfQVk<T0E0]mzAY3
+!s100 3L>>0WVk:WY4V_Rn[k]6n1
+R8
 32
-Z35 !s110 1733375672
+b1
+Z35 !s110 1733674812
 !i10b 1
-Z36 !s108 1733375671.000000
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\azras\Documents\PSD Proyek Akhir\Testbench.vhd|
-Z38 !s107 C:\Users\azras\Documents\PSD Proyek Akhir\Testbench.vhd|
+Z36 !s108 1733674811.000000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/LUTPackage.vhd|
+Z38 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/LUTPackage.vhd|
 !i113 1
+R13
 R14
-R15
-Abehavior
+Bbody
+R1
+R2
+R3
 R4
-R5
-DEx4 work 15 tb_dataencoding 0 22 cnIk9P^iial]62jR^z7Ph2
-!i122 55
-l18
-L8 49
-VR`^Ubn6f^c3bC:2YeT8M]3
-!s100 eeOGV`0eSm3C@;Q?FCG?S0
-R9
+!i122 57
+l0
+L52 1
+VVl7YAFCME7gCkLWDJM>XW0
+!s100 [4:Y6zL`FnbL@h9=I=bFJ2
+R8
 32
 R35
 !i10b 1
@@ -180,112 +207,392 @@ R36
 R37
 R38
 !i113 1
+R13
 R14
-R15
-Abehavioral
+Emasking
+Z39 w1733667952
+R3
 R4
+!i122 64
 R5
+Z40 8C:/Users/azras/Documents/PSD Proyek Akhir/masking.vhd
+Z41 FC:/Users/azras/Documents/PSD Proyek Akhir/masking.vhd
+l0
+L4 1
+V4daXljDd:2O2Vn:]9EaOz0
+!s100 QXT_C4^B1GP@LE^G9NhS71
+R8
+32
+Z42 !s110 1733675390
+!i10b 1
+Z43 !s108 1733675390.000000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/masking.vhd|
+Z45 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/masking.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R3
+R4
+DEx4 work 7 masking 0 22 4daXljDd:2O2Vn:]9EaOz0
+!i122 64
+l12
+L11 24
+VSMzo_OT7mljO6zV]oUkoI1
+!s100 eQ`CeTWgBHC?8jgdolSG]0
+R8
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 1
+R13
+R14
+Emasking_tb
+Z46 w1733668067
+Z47 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R3
+R4
+!i122 65
+R5
+Z48 8C:/Users/azras/Documents/PSD Proyek Akhir/masking_tb.vhd
+Z49 FC:/Users/azras/Documents/PSD Proyek Akhir/masking_tb.vhd
+l0
+L6 1
+V;:G@4Cc@clk9fGEOj]0FI0
+!s100 R^N^_ZTlV:n88[7>cFg?I0
+R8
+32
+Z50 !s110 1733675394
+!i10b 1
+Z51 !s108 1733675394.000000
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/masking_tb.vhd|
+Z53 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/masking_tb.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R47
+R3
+R4
+DEx4 work 10 masking_tb 0 22 ;:G@4Cc@clk9fGEOj]0FI0
+!i122 65
+l21
+L9 42
+VeD<OVPf;;:gH2ZWKP>?H>2
+!s100 3`AkHhL8[YlDN1KVFmbd43
+R8
+32
+R50
+!i10b 1
+R51
+R52
+R53
+!i113 1
+R13
+R14
+Ematrix_generator
+Z54 w1733669861
+R3
+R4
+!i122 66
+R5
+Z55 8C:/Users/azras/Documents/PSD Proyek Akhir/matrix_generator.vhd
+Z56 FC:/Users/azras/Documents/PSD Proyek Akhir/matrix_generator.vhd
+l0
+L4 1
+VJgm2<94bk3`=524ji`]F11
+!s100 FiQkFOG=GJ87F;Sf>KJMe2
+R8
+32
+Z57 !s110 1733675552
+!i10b 1
+Z58 !s108 1733675552.000000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/matrix_generator.vhd|
+Z60 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/matrix_generator.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R3
+R4
+DEx4 work 16 matrix_generator 0 22 Jgm2<94bk3`=524ji`]F11
+!i122 66
+l15
+L12 62
+VS4Ma>=l]NWfQ1P>Vfn?D73
+!s100 e9Noej=25aa3;IaNzifV^2
+R8
+32
+R57
+!i10b 1
+R58
+R59
+R60
+!i113 1
+R13
+R14
+Etb_data_encoder
+Z61 w1733675188
+R1
+R2
+R3
+R4
+!i122 62
+R5
+Z62 8C:/Users/azras/Documents/PSD Proyek Akhir/data_encoder_tb.vhd
+Z63 FC:/Users/azras/Documents/PSD Proyek Akhir/data_encoder_tb.vhd
+l0
+L6 1
+V:>dB?=PU9?9VU85^WF>`]1
+!s100 RjPUfc=[j3RGM6:hb]`zZ2
+R8
+32
+Z64 !s110 1733675196
+!i10b 1
+Z65 !s108 1733675196.000000
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/data_encoder_tb.vhd|
+Z67 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/data_encoder_tb.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 15 tb_data_encoder 0 22 :>dB?=PU9?9VU85^WF>`]1
+!i122 62
+l21
+L9 38
+V5>A3Q<A=24P7?V16`oW712
+!s100 in[>Kl==QPLX83h>[NDFZ0
+R8
+32
+R64
+!i10b 1
+R65
+R66
+R67
+!i113 1
+R13
+R14
+Etb_dataencoding
+Z68 w1733375575
+R3
+R4
+!i122 55
+R5
+Z69 8C:\Users\azras\Documents\PSD Proyek Akhir\Testbench.vhd
+Z70 FC:\Users\azras\Documents\PSD Proyek Akhir\Testbench.vhd
+l0
+L5 1
+VcnIk9P^iial]62jR^z7Ph2
+!s100 Oa`N=1D<;f3U6j@odkKhY1
+R8
+32
+Z71 !s110 1733375672
+!i10b 1
+Z72 !s108 1733375671.000000
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\azras\Documents\PSD Proyek Akhir\Testbench.vhd|
+Z74 !s107 C:\Users\azras\Documents\PSD Proyek Akhir\Testbench.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R4
+DEx4 work 15 tb_dataencoding 0 22 cnIk9P^iial]62jR^z7Ph2
+!i122 55
+l18
+L8 49
+VR`^Ubn6f^c3bC:2YeT8M]3
+!s100 eeOGV`0eSm3C@;Q?FCG?S0
+R8
+32
+R71
+!i10b 1
+R72
+R73
+R74
+!i113 1
+R13
+R14
+Abehavioral
+R3
+R4
 DEx4 work 15 tb_dataencoding 0 22 H=^IzX[H?QXoCXnkl6YzU1
 !i122 50
 l20
 L7 44
 Vc8a6cCClm<Rj;WJ_;2Yc90
 !s100 P]hQN2EiSN9ZPgNgQQVZe2
-R9
+R8
 32
 !s110 1733374914
 !i10b 1
 !s108 1733374914.000000
-R37
-R38
+R73
+R74
 !i113 1
+R13
 R14
-R15
 w1733374825
 Etestbench
-Z39 w1733372049
+Z75 w1733372049
+R3
 R4
-R5
 !i122 19
-R6
-R33
-R34
+R5
+R69
+R70
 l0
 L4 1
 VL^=B>LoS<QIZ6aQOYbIlR1
 !s100 Q]kAk;T8^c[acN>leXFFV2
-R9
+R8
 32
-R19
+R28
 !i10b 1
-R20
-R37
-R38
+R29
+R73
+R74
 !i113 1
+R13
 R14
-R15
 Abehavioral
+R3
 R4
-R5
 DEx4 work 9 testbench 0 22 L^=B>LoS<QIZ6aQOYbIlR1
 !i122 19
 l32
 L7 59
 Vljl200dXT9<JW`b8>=?N@3
 !s100 6Qc^TC<aM=3oL6mFecgmT1
-R9
+R8
 32
-R19
+R28
 !i10b 1
-R20
-R37
-R38
+R29
+R73
+R74
 !i113 1
+R13
 R14
-R15
 Etextencoder
 w1733368474
+R18
+R17
 R3
-R2
 R4
-R5
 !i122 0
-R6
+R5
 8C:/Users/azras/Documents/PSD Proyek Akhir/TextEncoder.vhd
 FC:/Users/azras/Documents/PSD Proyek Akhir/TextEncoder.vhd
 l0
 L5 1
 Vz5SHbVdXh;nCmAFQahL:D1
 !s100 ;;UOZ3Bo=UQ=DET4g7^P02
-R9
+R8
 32
-Z40 !s110 1733368679
+Z76 !s110 1733368679
 !i10b 1
-Z41 !s108 1733368679.000000
+Z77 !s108 1733368679.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/TextEncoder.vhd|
 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/TextEncoder.vhd|
 !i113 1
+R13
 R14
-R15
 Etextencoder_tb
 w1733368622
+R3
 R4
-R5
 !i122 1
-R6
+R5
 8C:/Users/azras/Documents/PSD Proyek Akhir/TextEncoder_tb.vhd
 FC:/Users/azras/Documents/PSD Proyek Akhir/TextEncoder_tb.vhd
 l0
 L4 1
 V;QXZCOAAH6Qhn1nkZWdD73
 !s100 FKT2l`gEnS;j3mnfDdZY21
-R9
+R8
 32
-R40
+R76
 !i10b 1
-R41
+R77
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/TextEncoder_tb.vhd|
 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/TextEncoder_tb.vhd|
 !i113 1
+R13
 R14
-R15
+Etop_level
+Z78 w1733675883
+R1
+R2
+R3
+R4
+!i122 70
+R5
+Z79 8C:/Users/azras/Documents/PSD Proyek Akhir/Top_Level.vhd
+Z80 FC:/Users/azras/Documents/PSD Proyek Akhir/Top_Level.vhd
+l0
+L6 1
+VG1zH4E=];]kM9?X^k4VQo1
+!s100 dJDzXo[NMeQO_Wk:U8PLW2
+R8
+32
+Z81 !s110 1733675891
+!i10b 1
+Z82 !s108 1733675891.000000
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/Top_Level.vhd|
+Z84 !s107 C:/Users/azras/Documents/PSD Proyek Akhir/Top_Level.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 9 top_level 0 22 G1zH4E=];]kM9?X^k4VQo1
+!i122 70
+l56
+L17 115
+V5doYCk[1jzWXG]SIQY9043
+!s100 WiCUJe?OPOW=B9Q<[<H801
+R8
+32
+R81
+!i10b 1
+R82
+R83
+R84
+!i113 1
+R13
+R14
+Etop_level_tb
+w1733676224
+R2
+R1
+R3
+R4
+!i122 71
+R5
+8C:/Users/azras/Documents/PSD Proyek Akhir/Top_Level_tb.vhd
+FC:/Users/azras/Documents/PSD Proyek Akhir/Top_Level_tb.vhd
+l0
+L6 1
+Vb2ki3nDZ<HD`4WT4iVW_S2
+!s100 bK@V^zE1n]jAfTVHh`Ma>3
+R8
+32
+!s110 1733676232
+!i10b 1
+!s108 1733676232.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/azras/Documents/PSD Proyek Akhir/Top_Level_tb.vhd|
+!s107 C:/Users/azras/Documents/PSD Proyek Akhir/Top_Level_tb.vhd|
+!i113 1
+R13
+R14
